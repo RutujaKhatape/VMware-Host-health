@@ -1,0 +1,17 @@
+name: VMware Host Health Dashboard
+
+on:
+  workflow_dispatch
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Files
+        shell: pwsh
+        run: |
+          Get-ChildItem -Recurse

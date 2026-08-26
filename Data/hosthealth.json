@@ -1,0 +1,979 @@
+[
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxodac-01.qdev.net",
+        "Cluster":  null,
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:42:22"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qdvesx-a02.qdev.net",
+        "Cluster":  "QDPERESX-A",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:42:25"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qdvesx-a01.qdev.net",
+        "Cluster":  "QDPERESX-A",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:42:28"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qdperesx-a03.qdev.net",
+        "Cluster":  "QDPERESX-A",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:42:31"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qdvesx-a03.qdev.net",
+        "Cluster":  "QDPERESX-A",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:42:36"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qdperesx-a04.qdev.net",
+        "Cluster":  "QDPERESX-A",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:42:39"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qdperesx-a01.qdev.net",
+        "Cluster":  "QDPERESX-A",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:42:42"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qdperesx-a02.qdev.net",
+        "Cluster":  "QDPERESX-A",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:42:45"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qdvesx-a04.qdev.net",
+        "Cluster":  "QDPERESX-A",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:42:48"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-d09.qdev.net",
+        "Cluster":  "QDDESX-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  1,
+        "ActiveAlarms":  [
+                             {
+                                 "AlarmName":  "Host memory usage",
+                                 "Status":  2
+                             }
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:42:52"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-d08.qdev.net",
+        "Cluster":  "QDDESX-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  1,
+        "ActiveAlarms":  [
+                             {
+                                 "AlarmName":  "Host memory usage",
+                                 "Status":  2
+                             }
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:42:56"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-d04.qdev.net",
+        "Cluster":  "QDDESX-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:42:59"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-d07.qdev.net",
+        "Cluster":  "QDDESX-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:43:03"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-d10.qdev.net",
+        "Cluster":  "QDDESX-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:43:06"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-d05-ha.qdev.net",
+        "Cluster":  "QDDESX-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  1,
+        "ActiveAlarms":  [
+                             {
+                                 "AlarmName":  "Host memory usage",
+                                 "Status":  2
+                             }
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:43:10"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-d03.qdev.net",
+        "Cluster":  "QDDESX-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  1,
+        "ActiveAlarms":  [
+                             {
+                                 "AlarmName":  "Host memory usage",
+                                 "Status":  3
+                             }
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:43:15"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-d01.qdev.net",
+        "Cluster":  "QDDESX-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:43:18"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-d02.qdev.net",
+        "Cluster":  "QDDESX-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:43:22"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c10.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:43:26"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c01.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  1,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:43:30"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c06.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  1,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:43:34"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c05.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  1,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:43:39"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c02.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  1,
+        "ActiveAlarms":  [
+                             {
+                                 "AlarmName":  "Host memory usage",
+                                 "Status":  2
+                             }
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:43:42"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c13.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  1,
+        "ActiveAlarms":  [
+                             {
+                                 "AlarmName":  "Host memory usage",
+                                 "Status":  2
+                             }
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:43:47"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c07.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:43:51"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c04-ha.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  1,
+        "ActiveAlarms":  [
+                             {
+                                 "AlarmName":  "Host memory usage",
+                                 "Status":  3
+                             }
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:43:55"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c03.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  1,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:43:58"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c11.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  1,
+        "ActiveAlarms":  [
+                             {
+                                 "AlarmName":  "Host memory usage",
+                                 "Status":  2
+                             }
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:44:03"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c09.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:44:06"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c12.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  1,
+        "ActiveAlarms":  [
+                             {
+                                 "AlarmName":  "Host memory usage",
+                                 "Status":  2
+                             }
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:44:10"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesx-c08.qdev.net",
+        "Cluster":  "QDDESX-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:44:14"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxsql-c07.qdev.net",
+        "Cluster":  "QDDESXSQL-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  1,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:44:17"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxsql-c01.qdev.net",
+        "Cluster":  "QDDESXSQL-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  1,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:44:21"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxsql-c02.qdev.net",
+        "Cluster":  "QDDESXSQL-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  1,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:44:24"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxsql-c06.qdev.net",
+        "Cluster":  "QDDESXSQL-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:44:28"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxsql-c04.qdev.net",
+        "Cluster":  "QDDESXSQL-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:44:31"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxsql-c08.qdev.net",
+        "Cluster":  "QDDESXSQL-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  1,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:44:35"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxsql-c05.qdev.net",
+        "Cluster":  "QDDESXSQL-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:44:38"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxsql-d02.qdev.net",
+        "Cluster":  "QDDESXSQL-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:44:42"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxsql-d01.qdev.net",
+        "Cluster":  "QDDESXSQL-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:44:45"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxsql-d03-ha.qdev.net",
+        "Cluster":  "QDDESXSQL-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  1,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Warning",
+        "LastUpdated":  "2026-08-26 12:44:49"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxora-d02.qdev.net",
+        "Cluster":  "QDDESXORA-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:44:53"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxora-d03-ha.qdev.net",
+        "Cluster":  "QDDESXORA-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:44:56"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxora-d01.qdev.net",
+        "Cluster":  "QDDESXORA-D",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:44:59"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxora-c06.qdev.net",
+        "Cluster":  "QDDESXORA-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:45:03"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxora-c03-ha.qdev.net",
+        "Cluster":  "QDDESXORA-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:45:06"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxora-c05.qdev.net",
+        "Cluster":  "QDDESXORA-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:45:09"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxora-c01.qdev.net",
+        "Cluster":  "QDDESXORA-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:45:13"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxora-c04.qdev.net",
+        "Cluster":  "QDDESXORA-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:45:16"
+    },
+    {
+        "vCenter":  "hdc2-vctr02-za.qdev.net",
+        "HostName":  "qddesxora-c02.qdev.net",
+        "Cluster":  "QDDESXORA-C",
+        "ConnectionState":  0,
+        "PowerState":  1,
+        "ESXiVersion":  "8.0.3",
+        "BuildNumber":  "24859861",
+        "MaintenanceMode":  false,
+        "ActiveAlarmCount":  0,
+        "ActiveAlarms":  [
+
+                         ],
+        "ConfigIssues":  0,
+        "HostDisconnected":  false,
+        "HostNotResponding":  false,
+        "HealthStatus":  "Healthy",
+        "LastUpdated":  "2026-08-26 12:45:20"
+    }
+]
