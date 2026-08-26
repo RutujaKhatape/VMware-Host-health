@@ -7,11 +7,15 @@ fetch('./Data/hosthealth.json')
     const clusters = {};
 
     data.forEach(host => {
-      if (!clusters[host.Cluster]) {
-        clusters[host.Cluster] = [];
-      }
-      clusters[host.Cluster].push(host);
-    });
+
+    const clusterName = host.Cluster || "Unassigned";
+
+    if (!clusters[clusterName]) {
+        clusters[clusterName] = [];
+    }
+
+    clusters[clusterName].push(host);
+});
 
     Object.keys(clusters).forEach(clusterName => {
 
