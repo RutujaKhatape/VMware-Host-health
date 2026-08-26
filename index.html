@@ -2,28 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>VMware Host Health Dashboard</title>
+    <title>VMware ESXi Cluster Health Dashboard</title>
     style.css
 </head>
+
 <body>
 
-    <h1>VMware ESXi Host Health Dashboard</h1>
+    <h1>VMware ESXi Cluster Health Dashboard</h1>
 
-    <table id="hostTable">
-        <thead>
-            <tr>
-                <th>Host Name</th>
-                <th>Cluster</th>
-                <th>Health Status</th>
-                <th>ESXi Version</th>
-                <th>Build Number</th>
-                <th>Active Alarms</th>
-                <th>Config Issues</th>
-                <th>Maintenance Mode</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+    <div id="clusters"></div>
 
     <script src="dashboard.js"></script>
 

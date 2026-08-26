@@ -2,39 +2,89 @@ fetch('./Data/hosthealth.json')
   .then(response => response.json())
   .then(data => {
 
-    const tbody = document.querySelector('#hostTable tbody');
+    const container = document.getElementById("clusters");
+
+    const clusters = {};
 
     data.forEach(host => {
-
-      let healthColor = "green";
-
-      if (host.HealthStatus === "Warning") {
-        healthColor = "orange";
+      if (!clusters[host.Cluster]) {
+        clusters[host.Cluster] = [];
       }
-
-      if (host.HealthStatus === "Critical") {
-        healthColor = "red";
-      }
-
-      const row = `
-        <tr>
-          <td>${host.HostName}</td>
-          <td>${host.Cluster}</td>
-          <td style="color:${healthColor};font-weight:bold;">
-            ${host.HealthStatus}
-          </td>
-          <td>${host.ESXiVersion}</td>
-          <td>${host.BuildNumber}</td>
-          <td>${host.ActiveAlarmCount}</td>
-          <td>${host.ConfigIssues}</td>
-          <td>${host.MaintenanceMode}</td>
-        </tr>
-      `;
-
-      tbody.innerHTML += row;
+      clusters[host.Cluster].push(host);
     });
 
-  })
-  .catch(error => {
-    console.error("Error loading hosthealth.json:", error);
+    Object.keys(clusters).forEach(clusterName => {
+
+      const hosts = clusters[clusterName];
+
+      const healthy = hosts.filter(
+        h => h.HealthStatus === "Healthy"
+      ).length;
+
+      const warning = hosts.filter(
+        h => h.HealthStatus === "Warning"
+      ).length;
+
+      const critical = hosts.filter(
+        h => h.HealthStatus === "Critical"
+      ).length;
+
+      let html = `
+        <div class="cluster-card">
+          <h2>${clusterName}</h2>
+
+          <p>
+            Total Hosts: ${hosts.length} |
+            🟢 Healthy: ${healthy} |
+            🟡 Warning: ${warning} |
+            🔴 Critical: ${critical}
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Host Name</th>
+                <th>Health</th>
+                <th>ESXi Version</th>
+                <th>Active Alarms</th>
+                <th>Maintenance</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+
+      hosts.forEach(host => {
+
+        let color = "green";
+
+        if (host.HealthStatus === "Warning") {
+          color = "orange";
+        }
+
+        if (host.HealthStatus === "Critical") {
+          color = "red";
+        }
+
+        html += `
+          <tr>
+            <td>${host.HostName}</td>
+            <td style="color:${color};font-weight:bold">
+              ${host.HealthStatus}
+            </td>
+            <td>${host.ESXiVersion}</td>
+            <td>${host.ActiveAlarmCount}</td>
+            <td>${host.MaintenanceMode}</td>
+          </tr>
+        `;
+      });
+
+      html += `
+            </tbody>
+          </table>
+        </div>
+      `;
+
+      container.innerHTML += html;
+    });
   });
+``
