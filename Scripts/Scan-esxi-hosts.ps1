@@ -107,9 +107,17 @@ $report | Format-Table -AutoSize
 # Save JSON
 $jsonPath = Join-Path $PSScriptRoot "..\Data\hosthealth.json"
 
-$report |
-ConvertTo-Json -Depth 5 |
-Out-File $jsonPath
+$jsonPath = Join-Path $PSScriptRoot "..\Data\hosthealth.json"
+
+$json = $report | ConvertTo-Json -Depth 10
+
+[System.IO.File]::WriteAllText(
+    $jsonPath,
+    $json,
+    [System.Text.UTF8Encoding]::new($false)
+)
+
+Write-Host "hosthealth.json created successfully" -ForegroundColor Green
 
 Write-Host ""
 Write-Host "hosthealth.json created successfully" -ForegroundColor Green
