@@ -1,75 +1,117 @@
-# ESXi Health Check Script
-#version1.0
+# ESXi Host Health Dashboard Script
+
 $ErrorActionPreference = 'Stop'
 
-Import-Module VMware.PowerCLI
-Set-PowerCLIConfiguration -Scope Session -InvalidCertificateAction Ignore -Confirm:$false | Out-Null
-Set-PowerCLIConfiguration -Scope Session -DisplayDeprecationWarnings:$false -Confirm:$false | Out-Null
+Import-Module VMware.VimAutomation.Core
 
-$server = 'hdc2-vctr02-za.qdev.net'
+Set-PowerCLIConfiguration `
+    -InvalidCertificateAction Ignore `
+    -DisplayDeprecationWarnings:$false `
+    -Confirm:$false | Out-Null
 
-# Secure credential prompt with masked password input.
+$server = "hdc2-vctr02-za.qdev.net"
+
 $cred = Get-Credential -Message "Enter read-only credentials for $server"
 
 $vi = Connect-VIServer -Server $server -Credential $cred
 
-$hosts = Get-VMHost | Sort-Object Name
-$alarmCache = @{}
+$report = @()
 
-$rows = foreach ($h in $hosts) {
-    $view = Get-View -Id $h.Id -Property Name,Runtime.ConnectionState,Runtime.PowerState,Summary.OverallStatus,TriggeredAlarmState
+foreach ($esxHost in (Get-VMHost | Sort-Object Name)) {
 
-    if (-not $view.TriggeredAlarmState -or $view.TriggeredAlarmState.Count -eq 0) {
-        [pscustomobject]@{
-            HostName        = $view.Name
-            ConnectionState = [string]$view.Runtime.ConnectionState
-            PowerState      = [string]$view.Runtime.PowerState
-            OverallStatus   = [string]$view.Summary.OverallStatus
-            AlarmStatus     = 'green'
-            AlarmName       = '(none)'
-            AlarmSeverity   = 'info'
-            Acknowledged    = ''
-            Time            = ''
-        }
-        continue
+    # CPU %
+    $cpuPercent = 0
+
+    if ($esxHost.CpuTotalMhz -gt 0) {
+        $cpuPercent =
+            ($esxHost.CpuUsageMhz / $esxHost.CpuTotalMhz) * 100
     }
 
-    foreach ($a in $view.TriggeredAlarmState) {
-        $alarmId = [string]$a.Alarm
-        if (-not $alarmCache.ContainsKey($alarmId)) {
-            $alarmCache[$alarmId] = (Get-View -Id $a.Alarm -Property Info.Name).Info.Name
-        }
+    # Memory %
+    $memoryPercent = 0
 
-        $severity = [string]$a.OverallStatus
-        if ([string]::IsNullOrWhiteSpace($severity)) {
-            $severity = 'unknown'
-        }
+    if ($esxHost.MemoryTotalGB -gt 0) {
+        $memoryPercent =
+            ($esxHost.MemoryUsageGB / $esxHost.MemoryTotalGB) * 100
+    }
 
-        [pscustomobject]@{
-            HostName        = $view.Name
-            ConnectionState = [string]$view.Runtime.ConnectionState
-            PowerState      = [string]$view.Runtime.PowerState
-            OverallStatus   = [string]$view.Summary.OverallStatus
-            AlarmStatus     = [string]$a.OverallStatus
-            AlarmName       = $alarmCache[$alarmId]
-            AlarmSeverity   = if ($severity -eq 'red') { 'error' } elseif ($severity -eq 'yellow') { 'warning' } else { $severity }
-            Acknowledged    = [string]$a.Acknowledged
-            Time            = if ($a.Time) { Get-Date $a.Time -Format 'yyyy-MM-dd HH:mm:ss' } else { '' }
-        }
+    # Cluster
+    try {
+        $clusterName = (Get-Cluster -VMHost $esxHost).Name
+    }
+    catch {
+        $clusterName = "Standalone"
+    }
+
+    # Config Issues
+    $configIssues = 0
+
+    if ($esxHost.ExtensionData.ConfigIssue) {
+        $configIssues = $esxHost.ExtensionData.ConfigIssue.Count
+    }
+
+    # Alerts
+    $alerts = @()
+
+    if ($cpuPercent -ge 90) {
+        $alerts += "CPU Usage Critical (>90%)"
+    }
+    elseif ($cpuPercent -ge 80) {
+        $alerts += "CPU Usage Warning (>80%)"
+    }
+
+    if ($memoryPercent -ge 90) {
+        $alerts += "Memory Usage Critical (>90%)"
+    }
+    elseif ($memoryPercent -ge 80) {
+        $alerts += "Memory Usage Warning (>80%)"
+    }
+
+    if ($configIssues -gt 0) {
+        $alerts += "Configuration Issues Present"
+    }
+
+    if ($esxHost.ConnectionState -ne "Connected") {
+        $alerts += "Host Not Connected"
+    }
+
+    if ($esxHost.ExtensionData.Runtime.InMaintenanceMode) {
+        $alerts += "Host In Maintenance Mode"
+    }
+
+    $healthStatus = "Healthy"
+
+    if ($alerts.Count -gt 0) {
+        $healthStatus = "Warning"
+    }
+
+    $report += [PSCustomObject]@{
+        HostName           = $esxHost.Name
+        Cluster            = $clusterName
+        ESXiVersion        = $esxHost.Version
+        BuildNumber        = $esxHost.Build
+        CPUUsagePercent    = $cpuPercent
+        MemoryUsagePercent = $memoryPercent
+        ConnectionState    = $esxHost.ConnectionState
+        MaintenanceMode    = $esxHost.ExtensionData.Runtime.InMaintenanceMode
+        ConfigIssues       = $configIssues
+        HealthStatus       = $healthStatus
+        AlertDefinitions   = ($alerts -join "; ")
+        LastUpdated        = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
     }
 }
 
-$timestamp = Get-Date -Format 'yyyyMMdd_HHmmss'
-$outFile = "esxi_host_alarm_scan_$timestamp.csv"
-$rows | Export-Csv -Path $outFile -NoTypeInformation
+# Display Results
+$report | Format-Table -AutoSize
 
-$summary = $rows | Group-Object AlarmSeverity | Sort-Object Name | Select-Object Name,Count
+# Save JSON
+$jsonPath = Join-Path $PSScriptRoot "..\Data\hosthealth.json"
 
-Write-Host "Connected to: $($vi.Name)"
-Write-Host "Hosts scanned: $($hosts.Count)"
-Write-Host "Report file: $outFile"
-Write-Host "Severity summary:"
-$summary | Format-Table -AutoSize | Out-String | Write-Host
-$rows | Sort-Object HostName,AlarmSeverity | Format-Table -AutoSize | Out-String -Width 220 | Write-Host
+$report |
+ConvertTo-Json -Depth 5 |
+Out-File $jsonPath
+
+Write-Host ""
+Write-Host "hosthealth.json created successfully" -ForegroundColor Green
 
 Disconnect-VIServer -Server $vi -Confirm:$false | Out-Null
